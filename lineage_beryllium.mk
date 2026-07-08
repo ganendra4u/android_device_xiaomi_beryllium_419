@@ -21,3 +21,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Xiaomi/beryllium/beryllium:10/QKQ1.190828.002/V12.0.3.0.QEJMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_DISABLE_EPPE := true
+
+AXION_MAINTAINER := ganx0000
+AXION_PROCESSOR := Snapdragon_845
+AXION_CAMERA_REAR_INFO := 12,5
+AXION_CAMERA_FRONT_INFO := 20
+
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/wlan \
+    hardware/qcom-caf/wlan/qcwcn
