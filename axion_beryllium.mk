@@ -17,3 +17,7 @@ AXION_CAMERA_FRONT_INFO := 20
 
 TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_AXFX := true
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/wlan \
+    hardware/qcom-caf/wlan/qcwcn
