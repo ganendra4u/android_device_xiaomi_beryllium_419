@@ -5,6 +5,15 @@
 #
 
 # Inherit from sdm845-common
+TARGET_KERNEL_PLATFORM_TARGET :=
+KERNEL_BUILD_OUT_PREFIX :=
+KERNEL_PATH := $(TARGET_KERNEL_SOURCE)
+KERNEL_ARCH := arm64
+KERNEL_MAKE_CMD := make
+KERNEL_MAKE_FLAGS :=
+KERNEL_CROSS_COMPILE := CROSS_COMPILE=aarch64-linux-android-
+TARGET_PREBUILT_KERNEL_HEADERS :=
+
 include device/xiaomi/sdm845-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/beryllium
